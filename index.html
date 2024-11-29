@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Eater</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Snake Eater</h1>
+        <p>Select the difficulty and launch the game:</p>
+        <select id="difficulty">
+            <option value="10">Easy</option>
+            <option value="25" selected>Medium</option>
+            <option value="40">Hard</option>
+            <option value="60">Harder</option>
+            <option value="120">Impossible</option>
+        </select>
+        <button onclick="launchGame()">Play Game</button>
+    </div>
+    <script>
+        async function launchGame() {
+            const difficulty = document.getElementById('difficulty').value;
+            const response = await fetch('/start_game', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ difficulty })
+            });
+            const data = await response.json();
+            alert(data.message);
+        }
+    </script>
+</body>
+</html>
