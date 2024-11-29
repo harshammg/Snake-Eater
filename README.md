@@ -7,13 +7,13 @@ Snake game with a web interface using Flask, HTML and CSS
 3 . pip install flask pygame
 
 # Snake Game
-├── app.py              # Flask server script
-├── snake_game.py       # Python Snake game logic
-├── static/
-│   ├── styles.css      # CSS for the web interface
+├── app.py              # Flask server script </br>
+├── snake_game.py       # Python Snake game logic </br>
+├── static/ </br>
+│   ├── styles.css      # CSS for the web interface </br>
 ├── templates/
-│   ├── index.html      # HTML for the web interface
-├── requirements.txt    # Dependencies list
+│   ├── index.html      # HTML for the web interface </br>
+├── requirements.txt    # Dependencies list </br>
 
 # Arrangement 
 1 . Create a folder called templates
