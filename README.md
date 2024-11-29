@@ -11,7 +11,7 @@ Snake game with a web interface using Flask, HTML and CSS
 ├── snake_game.py       # Python Snake game logic </br>
 ├── static/ </br>
 │   ├── styles.css      # CSS for the web interface </br>
-├── templates/
+├── templates/  </br>
 │   ├── index.html      # HTML for the web interface </br>
 ├── requirements.txt    # Dependencies list </br>
 
