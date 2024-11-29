@@ -17,7 +17,8 @@ Snake game with a web interface using Flask, HTML and CSS
 
 # Arrangement 
 1 . Create a folder called templates </br>
-* Add this name in code editor templates/index.html 
+* Add this name in code editor templates/index.html
+
 2 . Create another folder inside templates called static </br>
 * Add this name in code editor static/styles.css 
 
