@@ -20,3 +20,8 @@ Snake game with a web interface using Flask, HTML and CSS
 * Add this name in code editor templates/index.html
 2 . Create another folder inside templates called static
 * Add this name in code editor static/styles.css
+
+# To run the Application
+1 . Start the Flask server:
+python app.py
+2 . Open your browser and navigate to http://127.0.0.1:5000/.
